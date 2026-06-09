@@ -1,30 +1,145 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrollyBox</title>
+    <title>BrollyBox - Eco Info</title>
 
     <style>
-        .navigation{
+        /* Reset and modern standard font */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #fcfcfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar with your original orange */
+        .navigation {
             width: 100%;
             height: 100px;
             background-color: orange;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 30px;
+        }
+
+        /* Basic styling for the links */
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Logo styling */
+        .navigation a.logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        /* Button styling (with border and contrast) */
+        .navigation a.nav-button {
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.1); /* Slightly darker background */
+            border: 2px solid white; /* White border */
+            border-radius: 6px; /* Rounded corners */
+        }
+
+        /* Hover effect for the button */
+        .navigation a.nav-button:hover {
+            background-color: white;
+            color: orange;
+        }
+
+        /* Container for the text content */
+        .content-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #222;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #444;
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Badge for the eco-friendly focus */
+        .eco-badge {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* Styling for the info list */
+        .info-list {
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-list li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #555;
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="navigation">
-            
-            <a href="index.html">BrollyBox</a>
-
-        </navigation>  
+            <!-- Logo and the styled button -->
+            <a href="index.html" class="logo">BrollyBox</a>
+            <a href="index.html" class="nav-button">Back to Map</a>
+        </div>  
     </header>
-  
+
+    <main class="content-container">
+        <span class="eco-badge">🌱 Environmentally Friendly</span>
+        
+        <h1>Our Green Mission</h1>
+        <p>
+            Welcome to BrollyBox! We are dedicated to providing a smart, seamless service that fits perfectly into your daily routine. But more than that, we are fully committed to keeping our concept <strong>environmentally friendly</strong> and sustainable for our planet.
+        </p>
+
+        <h2>Why BrollyBox is Eco-Friendly</h2>
+        <p>
+            We believe that small changes can make a big difference. By choosing our service, you are actively supporting a sustainable future and a greener lifestyle.
+        </p>
+
+        <ul class="info-list">
+            <li><strong>Environmentally Friendly Materials:</strong> We prioritize sustainable, high-quality, and long-lasting options to reduce unnecessary waste.</li>
+            <li><strong>Shared Economy:</strong> Sharing resources means fewer products need to be manufactured, significantly lowering our collective carbon footprint.</li>
+            <li><strong>Green Operations:</strong> Our local networks and digital tracking are optimized to keep logistics clean, efficient, and eco-conscious.</li>
+        </ul>
+
+        <h2>Join the Movement</h2>
+        <p>
+            Sustainability doesn't mean compromising on comfort. With BrollyBox, you get the best of both worlds: ultimate convenience right when you need it, and the peace of mind that you are making an environmentally friendly choice every single day.
+        </p>
+    </main>
+
 </body>
 </html>
